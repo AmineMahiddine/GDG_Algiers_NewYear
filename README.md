@@ -10,7 +10,7 @@ from 22/12/2019 to 29/12/2019
 With the following features:
 
 ##### landing Page
-* ✅ Conventual, Party Design
+* ✅ Convivial, Party Design
 * ✅ fireWork animation on the background
 * ✅ responsive
 * ✅ About GDG-Algiers section
