@@ -11,18 +11,18 @@ With the following features:
 
 ##### landing Page
 * ✅ Convivial, Party Design
-* ✅ fireWork animation on the background
-* ✅ responsive
+* ✅ FireWork animation on the background
+* ✅ Responsive
 * ✅ About GDG-Algiers section
-* ✅ contact section
+* ✅ Contact section
 
 ##### Event Page
 * ✅ Conventual, Party Design
 * ✅ Chat Room made with nodeJS Express mongoDB
 * ✅ A small game inspired by flappy bird
-  * apreas on click
-  * responsive
-* ✅ fire work animation on the background
+  * Apreas on click
+  * Responsive
+* ✅ Fire work animation on the background
 * ✅ A button that show a surprize on new years day
 * ✅ responsive
 
@@ -44,38 +44,38 @@ With the following features:
 ### Install the Dependencies :
 
 #### In the server derectory: 
-- [ ] open a terminal and type
+- [ ] Open a terminal and type
 
 - [ ] npm config user.name="<your name goes here>"
 - [ ] npm config user.email="<your email goes here>"
 
-*  init a derectory with your info
+*  Init a derectory with your info
   * ``` npm init -y```
 
-- [ ] install express and morgan
+- [ ] Install express and morgan
 >morgan: HTTP request logger middleware for node.js
 > note: morgan is a middle-war libraries that logs all the incomming requests and will help while debugging
   * ``` npm i express morgan```
-- [ ] install nodemon that will auto refresh whene a change is commited to the server
+- [ ] Install nodemon that will auto refresh whene a change is commited to the server
   * ```npm i --save-dev nodemon```
-- [ ] install cors
+- [ ] Install cors
  - CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
   * ``` npm i cors```
-- [ ] install monk to talk to MongoDB
+- [ ] Install monk to talk to MongoDB
   * ``` npm i monk```
-- [ ] install bad-words A javascript filter for badwords
+- [ ] Install bad-words A javascript filter for badwords
   * ``` npm init bad-words```
-- [ ] install express-rate-limit
+- [ ] Install express-rate-limit
   * Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints such as password reset.
   * ``` npm init express-rate-limit```
 #### then
-* type ``` npm run dev ```
+* Type ``` npm run dev ```
 
 ## In the server derectory
 
-* type ``` npm i -g live-server```
+* Type ``` npm i -g live-server```
 
-* type ``` live-server```
+* Type ``` live-server```
 
 ## In the /client/game derectory:
 - [ ] Add the P5.js libraries from [click here](https://p5js.org/)
