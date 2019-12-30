@@ -1,5 +1,5 @@
 # GDG-Algiers NEW_YEAR APP 🎉✨🎆🎈
-### A basic CHAT ROOM WITH A GAME
+A basic CHAT ROOM WITH A GAME
 
 ## Description
 
