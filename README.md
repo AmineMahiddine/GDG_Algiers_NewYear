@@ -68,16 +68,16 @@ With the following features:
 - [ ] install express-rate-limit
   * Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints such as password reset.
   * ``` npm init express-rate-limit```
-### then
+#### then
 * type ``` npm run dev ```
 
-### In the server derectory
+## In the server derectory
 
 * type ``` npm i -g live-server```
 
 * type ``` live-server```
 
-### In the client/game derectory:
+## In the /client/game derectory:
 - [ ] Add the P5.js libraries from [click here](https://p5js.org/)
 - [ ] Also you nedd to add p5.collide2d.js
 
