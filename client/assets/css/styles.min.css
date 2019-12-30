@@ -1,0 +1,134 @@
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+.col.msgs::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: #dadada;
+}
+
+.col.msgs::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 6px;
+  background-color: #f2f2f2;
+}
+
+.col.msgs::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(167, 167, 167);
+}
+
+input, textarea {
+  border-radius: 5px!important;
+  background-color: transparent !important;
+  border-color: #f8f8f8 !important;
+  color: #fff !important;
+}
+
+.col-xl-9.main {
+  border-left: 1px solid #f2f2f2;
+  text-align: center;
+}
+
+#main {
+  min-height: 470px !important;
+  width: 90%;
+  margin: 0 auto;
+  /* background-color: red; */
+  z-index: 5;
+}
+
+.col.msgs {
+  /* border: 1px solid #363636; */
+  border-radius: 5px;
+  position: relative;
+  margin: 5px 5px 5px 0px !important;
+  color: #ffffff;
+  overflow: auto;
+  max-height: 400px;
+}
+
+/* .col.form-group {
+  border: 1px solid #363636;
+  border-radius: 5px;
+} */
+
+.navbar {
+  height: 60px;
+}
+
+/* ---------------- */
+
+@media(max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fff;
+  }
+}
+
+@media(max-width: 1200px) {
+  form.col.form-group {
+    height: 100% !important;
+  }
+  .col.msgs {
+    height: 400px !important;
+  }
+}
+
+/* ---------------- */
+
+label, input, textarea, .note, #loadMore {
+  color: rgb(255, 255, 255) !important;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.note, #loadMore {
+  font-size: 10px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#black {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #000; */
+  z-index: -1;
+}
+
+@media (max-width: 575px) {
+  .whoisGDG {
+    border-radius: 0 !important;
+  }
+  #main{
+    height: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .maintxt {
+    background-color: rgb(0, 0, 0) !important;
+    opacity: .8;
+  }
+  .maintxtTop{
+    font-size: 50px !important ;
+    color: #fff !important;
+    opacity: 1 !important;
+  }
+}

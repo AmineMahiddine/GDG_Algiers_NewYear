@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>HAPPY NEW YEAR</title>
+  <link rel="icon" href="/assets/img/favicon/android-chrome-192x192.png" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+  <!-- p5.js files -->
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script> -->
+  <script src="game/p5/p5.min.js"></script>
+  <script src="game/p5/p5.dom.min.js"></script>
+  <script src="game/p5/p5.sound.min.js"></script>
+  <script src="game/p5/p5.collide2d.js"></script>
+
+  <script>
+
+    function activateAcceptButton() {
+
+      const d = new Date();
+
+      const year = d.getFullYear();
+      const hour = d.getHours();
+      const min = d.getMinutes();
+      // console.log(year);
+      // console.log(hour);
+      // console.log(min);
+
+      if (year == 2020 && hour == 0 && min == 0) {
+        const accBtn = document.getElementsByClassName('accept-btn');
+        accBtn[0].children[0].classList.remove('disabled');
+        setTimeout(() => {
+          myFunction();
+          hideAll();
+          swal.close();
+        }, 3000);
+        swal("Happy New Year 💖 !!", "Hope 2020 will be full of Joy and Happiness.", "success");
+
+      } else {
+        swal("Wait For The Surprise 🎁", "Please Retry After 01 JAN 2020 | 00:00:00 AM.", "error");
+      }
+
+    }
+
+
+    // Get the video
+    function myFunction() {
+      let video = document.getElementById("myVideo");
+      video.style.zIndex = 1;
+      // Get the button
+      let btn = document.getElementById("click2020");
+      let black = document.getElementById("black");
+      black.style.zIndex = '-1';
+      // Pause and play the video, and change the button text
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+
+    let d_none_exist = true;
+    let letHavaFun = () => {
+      removed = document.querySelector('#main');
+      if (d_none_exist) {
+        removed.classList.remove('d-none');
+        d_none_exist = false;
+      }
+      else{
+        removed.classList.add('d-none');
+        d_none_exist = true;
+      }
+      document.querySelector('#main').focus();
+    }
+
+
+  </script>
+</head>
+
+<body>
+
+
+  <video id="myVideo">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <div id="black"></div>
+
+  <nav class="navbar navbar-light navbar-expand-lg" id="mainNav" style="z-index: 10;">
+    <div class="container-fluid">
+      <a class="nav-bar-brand" href="./index.html">
+        <img class="d-inline-block" style="height: 25px;width: 180px;background-size: cover;"
+          src="/assets/img/GDGlogo1.png"></a>
+      <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
+        type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
+          class="fa fa-align-justify"></i></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" style="width: 100%; margin: 0  -16px !important; padding: 0 15px;" >
+        <ul class="nav navbar-nav ml-auto" >
+          <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+              href="/index.html#about">About</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger"
+              href="/index.html#contact">Contact</a></li>
+
+          <div class="accept-btn">
+            <button class="btn btn-primary disabled " id="click2020" onclick=" activateAcceptButton()"
+              style="font-size: 12px;text-transform: none; margin: 3px; "><a class=" js-scroll-trigger">GDG-Algiers
+                2019 Rewind</a></button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" >
+
+    <div class="row" id="app" style="height: calc(100vh - 70px); ">
+      <div class="col topCol" style="background-color: #6c63ff ; padding: 0 10px !important;">
+          <div class="col msgs">
+            <div class="button-container "style="width: 100%;">
+              <div class="msgs" id="msgs"></div>
+              <button id="loadMoreButton" class="btn btn-primary" style="font-size: 12px; margin: 10px 0;">Load More
+                Messages</button>
+            </div>
+
+          </div>
+          <div class="error-message" style="color: rgb(184, 28, 28);"></div>
+          <p id="loadMore">Loading ✨</p>
+          <div class="loading">
+            <img src="./assets/img/wait.gif" alt="loading" style="height: 50px;display: inline-block; ">
+          </div>
+          <form class="col form-group" style="margin: 10px 0;">
+            <div>
+              <div class="col">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" class="form-control">
+              </div>
+              <div class="col">
+                <label for="content">Your Message :</label>
+                <textarea name="content" id="content" class="form-control"></textarea>
+                <button type="submit" class="btn btn-primary" type="button"
+                  style="font-size: 12px;margin-top: 6px;margin-bottom: 2px;">send</button>
+                <p style="font-size: 10px;" class="note">note: send one msg every
+                  30 sec .</p>
+              </div>
+          </form>
+
+
+        </div>
+    </div>
+    <div class="col-xl-9 main ">
+      <h1 style=" color: #fff; max-width:650px; margin: 30px auto;text-align: center;font-size: 32px;;">Welcome To GDG
+        & WTM New Year's EVE</h1>
+      <iframe id="main" class="d-none" src="./game/index.html" frameborder="0" allowtransparency="true"
+        style="background-color: transparent !important;width: 100%;">
+      </iframe>
+
+      <button class="btn btn-primary" style="position: absolute; top: 83vh;right: 60px;margin: 10px 0;"
+        onclick="letHavaFun()">let's have fun</button>
+
+
+      <!-- photo-gallery -->
+
+      <!-- <div class="photo-gallery" style="margin: 0 auto;">
+        <div class="container-fluid">
+          <div class="px-lg-5">
+
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
+                <div class="bg-white rounded shadow-sm"><img
+                    src="https://res.cloudinary.com/mhmd/image/upload/v1556294929/matthew-hamilton-351641-unsplash_zmvozs.jpg"
+                    alt="" class="img-fluid card-img-top">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+  <!-- bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+
+  <!-- animation -->
+  <script src="assets/js/script.min.js"></script>
+
+
+
+  <!-- fireworks files -->
+  <script src="fireworks/particle.js"></script>
+  <script src="fireworks/firework.js"></script>
+  <script src="fireworks/sketch.js"></script>
+
+  <!-- client.js -->
+  <script src="./client.js"></script>
+
+</body>
+
+</html>
