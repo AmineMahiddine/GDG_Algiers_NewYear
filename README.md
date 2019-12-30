@@ -1,4 +1,4 @@
-# GDG-Algiers NEW_YEAR APP
+# GDG-Algiers NEW_YEAR APP 🎉✨🎆🎈
 ### A basic CHAT ROOM WITH A GAME
 
 ## Description
@@ -10,32 +10,32 @@ from 22/12/2019 to 29/12/2019
 With the following features:
 
 ##### landing Page
-- [x] Conventual, Party Design
-- [x] fireWork animation on the background
-- [x] responsive
-- [x] About GDG-Algiers section
-- [x] contact section
+* ✅ Conventual, Party Design
+* ✅ fireWork animation on the background
+* ✅ responsive
+* ✅ About GDG-Algiers section
+* ✅ contact section
 
 ##### Event Page
-- [x] Conventual, Party Design
-- [x] Chat Room made with nodeJS Express mongoDB
-- [x] A small game inspired by flappy bird
+* ✅ Conventual, Party Design
+* ✅ Chat Room made with nodeJS Express mongoDB
+* ✅ A small game inspired by flappy bird
   * apreas on click
   * responsive
-- [x] fire work animation on the background
-- [x] A button that show a surprize on new years day
-- [x] responsive
+* ✅ fire work animation on the background
+* ✅ A button that show a surprize on new years day
+* ✅ responsive
 
 
 
-## How to use
+## How to use 🤷‍♂️
 
 ### clone or download the project .zip file
 
 `` git clone https://github.com/AmineMahiddine/GDG_Challenge_newYear.git``
 
 
-### Prerequisites
+### Prerequisites 🐱‍💻
 
 - [x] nodeJS installed
 - [x] npm installed
@@ -43,7 +43,7 @@ With the following features:
 
 ### Install the Dependencies :
 
-#### In the server derectory:
+#### In the server derectory: 
 - [ ] open a terminal and type
 
 - [ ] npm config user.name="<your name goes here>"
@@ -68,19 +68,18 @@ With the following features:
 - [ ] install express-rate-limit
   * Basic rate-limiting middleware for Express. Use to limit repeated requests to public APIs and/or endpoints such as password reset.
   * ``` npm init express-rate-limit```
-## then
-> type ``` npm run dev ```
+### then
+* type ``` npm run dev ```
 
-#### In the server derectory
+### In the server derectory
 
-* ```npm i -g live-server```
-## then
-> type ```live-server```
+* type ``` npm i -g live-server```
 
-#### In the client/game derectory:
+* type ``` live-server```
 
-- [x] Add the P5.js libraries from [click here](https://p5js.org/)
-- [x] Also you nedd to add p5.collide2d.js
+### In the client/game derectory:
+- [ ] Add the P5.js libraries from [click here](https://p5js.org/)
+- [ ] Also you nedd to add p5.collide2d.js
 
 ### Licence
 This Project is under the [MIT LICENCE](https://github.com/AmineMahiddine/GDG_Challenge_newYear/blob/master/LICENSE.txt)
