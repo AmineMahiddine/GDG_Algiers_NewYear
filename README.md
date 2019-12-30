@@ -82,4 +82,4 @@ With the following features:
 - [ ] Also you nedd to add p5.collide2d.js
 
 ### Licence
-This Project is under the [MIT LICENCE](https://github.com/AmineMahiddine/GDG_Challenge_newYear/blob/master/LICENSE.txt)
+> This Project is under the [MIT LICENCE](https://github.com/AmineMahiddine/GDG_Challenge_newYear/blob/master/LICENSE.txt)
